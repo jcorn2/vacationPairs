@@ -1,0 +1,14 @@
+.Pair-pair-container {
+    border: 1px solid black;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(124, 0, 128);
+}
+
+.Pair-person {
+    font-style: Verdana;
+    font-size: 1.25em;
+}

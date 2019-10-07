@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
     return (
         <div className="Header-container">
-            <h1>The Cornelius Family Vacation Generator</h1>
+            <h2>The Cornelius Family Vacation Generator</h2>
         </div>
     );
 }
