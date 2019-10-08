@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
-import Pair from './components/pairGenerator/pair/Pair';
+import PairGenerator from './components/pairGenerator/PairGenerator';
 
 function App() {
   return (
     <div className="App">
         <Header />
-        <Pair names={['James', 'Joe']}/>
+        <PairGenerator />
     </div>
   );
 }
