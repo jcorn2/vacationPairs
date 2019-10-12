@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Pair from './pair/Pair';
+import Person from './person/Person';
 import './PairGenerator.css';
 
 const intialPeople = ['Mom', 'Dad', 'Mike', 'Betsy', 'Joe', 'Kristen', 'George', 'Greg', 'Mary', 'Zach'];
@@ -11,12 +11,9 @@ function PairGenerator() {
         <div className="PairGenerator-Container">
             <div className="PairGenerator-Pairs">
                 {
-                    people.reduce((result, value, index, array) => {
-                        if (index % 2 === 0) {
-                            result.push(array.slice(index, index + 2));
-                        }
-                        return result;
-                    }, []).map((persons, index) => <Pair key={index} names={persons} />)
+                    people.map((person) => (
+                        <Person name={person} key={person} />
+                    ))
                 }
             </div>
             <div className="PairGenerator-Button-Container">

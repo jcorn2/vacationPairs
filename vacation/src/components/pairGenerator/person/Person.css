@@ -1,0 +1,16 @@
+.Person-container {
+    border: 1px solid black;
+    width: 150px;
+    height: 100px;
+    font-size: 1.5em;
+    position: relative;
+    background: rgb(124, 0, 128);
+    margin-bottom: 30px;
+}
+
+.Person {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
